@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+
+
+}
+
+.barra-navegacion{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-list li{
+    display: inline-block;
+}
+
+.img-header .logo-header {
+    width: 14rem;
+    height: 4rem;
+}
