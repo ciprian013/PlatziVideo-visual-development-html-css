@@ -92,11 +92,50 @@ ul:hover {
   height: 50px;
   padding: 0px 20px;
   width: 70%;
-  outline: none;
+  outline: none; /*Quita los bordes cuando uno le da click*/
 
 }
 
 ::placeholder{
   color: white;
 }
+
+.carousel{
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+}
+
+.carousel-container{
+  white-space: nowrap; /*con esta propiedad los elementos seguiran de largo como un block de notas*/
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+
+.carousel-container-item{
+  background-color: palevioletred;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all; /*animacion mas fluida*/
+  transform-origin: center left;/*para que se mueva o algo asi(averiguar)*/
+
+}
+
+.carousel-container-item:hover ~ .carousel-container-item{
+  transform: translate3d(100px,0,0);
+}
+
+.carousel-container:hover .carousel-container-item{ /*cuando selecciono uno los demas se vuelven opacos*/
+  opacity: 0.3;
+}
+.carousel-container:hover .carousel-container-item:hover{/*incrementar tamaño*/
+  transform: scale(1.5);
+  opacity: 1;
+} 
 
