@@ -5,13 +5,13 @@
 }
 
 body {
-  background-color: #ab88ff;
+  background-color: #8F57FD;
   font-family: "Mulish", sans-serif;
 }
 
 header {
   display: flex;
-  background-color: #ab88ff;
+  background-color: #8F57FD;
 }
 
 .barra-navegacion {
@@ -72,3 +72,31 @@ ul:hover {
   display: flex;
   color: white;
 }
+
+.main{
+  height: 300px;
+}
+
+.main-title{
+  color: white;
+  font-size: 25px;
+}
+
+.main-input{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+  outline: none;
+
+}
+
+::placeholder{
+  color: white;
+}
+
