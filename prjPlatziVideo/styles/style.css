@@ -5,13 +5,13 @@
 }
 
 body {
-  background-color: #8F57FD;
+  background-color: #8f57fd;
   font-family: "Mulish", sans-serif;
 }
 
 header {
   display: flex;
-  background-color: #8F57FD;
+  background-color: #8f57fd;
 }
 
 .barra-navegacion {
@@ -73,16 +73,16 @@ ul:hover {
   color: white;
 }
 
-.main{
+.main {
   height: 300px;
 }
 
-.main-title{
+.main-title {
   color: white;
   font-size: 25px;
 }
 
-.main-input{
+.main-input {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 25px;
@@ -93,27 +93,26 @@ ul:hover {
   padding: 0px 20px;
   width: 70%;
   outline: none; /*Quita los bordes cuando uno le da click*/
-
 }
 
-::placeholder{
+::placeholder {
   color: white;
 }
 
-.carousel{
+.carousel {
   width: 100%;
   overflow: scroll;
   padding: 30px;
   position: relative;
 }
 
-.carousel-container{
+.carousel-container {
   white-space: nowrap; /*con esta propiedad los elementos seguiran de largo como un block de notas*/
   margin: 70px 0px;
   padding-bottom: 10px;
 }
 
-.carousel-container-item{
+.carousel-container-item {
   background-color: palevioletred;
   width: 200px;
   height: 250px;
@@ -123,19 +122,60 @@ ul:hover {
   display: inline-block;
   cursor: pointer;
   transition: 450ms all; /*animacion mas fluida*/
-  transform-origin: center left;/*para que se mueva o algo asi(averiguar)*/
-
+  transform-origin: center left; /*para que se mueva o algo asi(averiguar)*/
+  position: relative;
 }
 
-.carousel-container-item:hover ~ .carousel-container-item{
-  transform: translate3d(100px,0,0);
+.carousel-container-item:hover ~ .carousel-container-item {
+  transform: translate3d(100px, 0, 0);
 }
 
-.carousel-container:hover .carousel-container-item{ /*cuando selecciono uno los demas se vuelven opacos*/
+.carousel-container:hover .carousel-container-item {
+  /*cuando selecciono uno los demas se vuelven opacos*/
   opacity: 0.3;
 }
-.carousel-container:hover .carousel-container-item:hover{/*incrementar tamaño*/
+.carousel-container:hover .carousel-container-item:hover {
+  /*incrementar tamaño*/
   transform: scale(1.5);
   opacity: 1;
-} 
+}
 
+.carousel-container-item-img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover; /*para que la imagen recupere su tamaño original*/
+}
+
+.carousel-container-item-detalles {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.carousel-container-item-detalles img {
+  height: 15px;
+}
+
+.carousel-container-item-detalles p {
+  margin: 0px;
+}
+
+.carousel-container-item-detalles:hover {
+  opacity: 1;
+  color: white;
+}
