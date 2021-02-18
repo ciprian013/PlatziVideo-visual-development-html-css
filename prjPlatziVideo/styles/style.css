@@ -186,7 +186,13 @@ ul:hover {
   color: white;
 }
 
+/*Estilos del login*/
+
 .header-login {
+  display: flex;
+}
+
+.header-register{
   display: flex;
 }
 
@@ -194,6 +200,15 @@ ul:hover {
 
 .login{
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
+}
+
+.register{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,7 +229,19 @@ min-height: 700px;
 display: flex;
 justify-content: space-around;
 flex-direction: column;
+}
 
+.register-container{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 430px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .login-container-form{
@@ -224,17 +251,11 @@ flex-direction: column;
 
 }
 
-.login-container-form label{
-  font-size: 14px;
-}
-
-.login-container-remember-me{
-  color: white;
+.register-container-form{ /*a partir de aqui ya toma la forma de columna , no antes*/
   display: flex;
-  justify-content: space-between;
-  margin-top:10px ;
-
+  flex-direction: column;
 }
+
 
 .login-container-remember-me a{
   color: white;
@@ -263,12 +284,25 @@ flex-direction: column;
   height: 30px;
 }
 
+
+
 .login-container-register {
   font-size: 14px;
-
 }
 
+.register-container-inicio-sesion{
+  font-size: 14px;
+}
+
+
 .login-container-register a {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.register-container-inicio-sesion a{
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -278,6 +312,10 @@ flex-direction: column;
 .login-container-register a:hover {
   text-decoration: underline;
   
+}
+
+.register-container-inicio-sesion a:hover{
+  text-decoration: underline;
 }
 
 .input{
@@ -328,8 +366,24 @@ flex-direction: column;
   padding-left: 30px;
   text-decoration: none;
 }
+
+.footer-register{
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+
+}
+
+
 .footer-login a:hover{
   text-decoration: underline;
+}
+
+.footer-register a:hover{
+  text-decoration: underline;
+
 }
 
 
