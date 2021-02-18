@@ -83,6 +83,15 @@ ul:hover {
   height: 300px;
 }
 
+.barra-busqueda{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
 .main-title {
   color: white;
   font-size: 25px;
@@ -107,7 +116,7 @@ ul:hover {
 
 .carousel {
   width: 100%;
-  overflow: scroll;
+  overflow: hidden ;
   padding: 30px;
   position: relative;
 }
@@ -324,6 +333,7 @@ flex-direction: column;
   border-top: 0px;
   border-right: 0px;
   border-bottom: 2px solid white;
+  color: white;
   font-family: "Mulish", sans-serif;
   font-size: 16px;
   margin-bottom: 20px;
