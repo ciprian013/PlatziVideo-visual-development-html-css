@@ -1,4 +1,5 @@
 $blanco: white; /*creacion de una variable que toma el blanco y lo reemplaza por todos los white repetidos */
+$fl: flex;
 
 * {
   margin: 0;
@@ -13,11 +14,11 @@ body {
 }
 
 .header-index {
-  display: flex;
+  display: $fl;
 }
 
 .barra-navegacion {
-  display: flex;
+  display: $fl;
   justify-content: flex-end;
 
   width: 100%;
@@ -37,7 +38,7 @@ body {
 
 .navegacion-perfil {
   width: 100px;
-  display: flex;
+  display: $fl;
   align-items: center;
 
   ul {
@@ -61,7 +62,7 @@ body {
   }
 
   p {
-    display: flex;
+    display: $fl;
     color: $blanco;
   }
 
@@ -80,7 +81,7 @@ body {
 }
 
 .barra-busqueda {
-  display: flex;
+  display: $fl;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -181,7 +182,7 @@ body {
   right: 0;
   bottom: 0;
 
-  display: flex;
+  display: $fl;
   justify-content: flex-end;
   flex-direction: column;
 
@@ -202,15 +203,15 @@ body {
 /*Estilos del login*/
 
 .header-login {
-  display: flex;
+  display: $fl;
 }
 
 .header-register {
-  display: flex;
+  display: $fl;
 }
 
 .login {
-  display: flex;
+  display: $fl;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -219,7 +220,7 @@ body {
 }
 
 .register {
-  display: flex;
+  display: $fl;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -234,7 +235,7 @@ body {
   color: $blanco;
   padding: 60px 68px 40px;
   min-height: 700px;
-  display: flex;
+  display: $fl;
   justify-content: space-around;
   flex-direction: column;
 }
@@ -247,19 +248,19 @@ body {
   padding: 60px 68px 40px;
   min-height: 700px;
   width: 430px;
-  display: flex;
+  display: $fl;
   justify-content: space-around;
   flex-direction: column;
 }
 
 .login-container-form {
-  display: flex;
+  display: $fl;
   flex-direction: column; /*Direccion de los elementos en columna*/
 }
 
 .register-container-form {
   /*a partir de aqui ya toma la forma de columna , no antes*/
-  display: flex;
+  display: $fl;
   flex-direction: column;
 }
 
@@ -274,7 +275,7 @@ body {
 }
 
 .login-container-social-media > div {
-  display: flex;
+  display: $fl;
   align-items: center;
   font-size: 14px;
   margin-bottom: 8px;
@@ -354,7 +355,7 @@ body {
 }
 
 footer {
-  display: flex;
+  display: $fl;
   align-items: center;
   height: 100px;
   width: 100%;
@@ -388,7 +389,7 @@ footer {
 }
 
 .notfound-text {
-  display: flex;
+  display: $fl;
   align-items: center;
   justify-content: center;
   height: 600px;
