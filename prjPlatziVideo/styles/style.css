@@ -5,14 +5,10 @@
 }
 
 body {
-  background-color: #8f57fd;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
   font-family: "Mulish", sans-serif;
-}
-
-.body-login{
-  background: linear-gradient(#21C08B, #AB88FF);
-
-
 }
 
 .header-index {
@@ -362,7 +358,15 @@ flex-direction: column;
   margin: 10px 0px;
 }
 
-.footer{
+
+
+.footer-login{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+.footer-register{
   display: flex;
   align-items: center;
   height: 100px;
@@ -394,6 +398,29 @@ flex-direction: column;
 .footer-register a:hover{
   text-decoration: underline;
 
+}
+
+@media only screen and (max-width: 600px){
+  .login-container{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .footer-login{
+    align-items: flex-start;
+    flex-direction: column;
+    width: 200px;
+  }
+
+
+  .footer-register{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  
 }
 
 
