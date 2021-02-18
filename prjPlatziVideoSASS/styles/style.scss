@@ -1,4 +1,4 @@
-$blanco: $blanco;
+$blanco: white; /*creacion de una variable que toma el blanco y lo reemplaza por todos los white repetidos */
 
 * {
   margin: 0;
@@ -7,10 +7,9 @@ $blanco: $blanco;
 }
 
 body {
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   font-family: "Mulish", sans-serif;
-  
 }
 
 .header-index {
@@ -40,47 +39,47 @@ body {
   width: 100px;
   display: flex;
   align-items: center;
-}
 
-.navegacion-perfil ul {
-  display: none;
-  list-style: none;
-  padding: 0px;
-  position: absolute;
-  width: 100px;
-  text-align: right;
-  margin: 0px;
-  margin-top: 60px;
-}
+  ul {
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px;
+    margin-top: 60px;
+  }
 
-.navegacion-perfil:hover ul,
-ul:hover {
-  display: block;
-}
+  li {
+    margin: 10px 0px;
+  }
 
-.navegacion-perfil li {
-  margin: 10px 0px;
-}
+  li a {
+    color: $blanco;
+    text-decoration: none;
+  }
 
-.navegacion-perfil li a {
-  color: $blanco;
-  text-decoration: none;
-}
+  p {
+    display: flex;
+    color: $blanco;
+  }
 
-.navegacion-perfil li a:hover {
-  text-decoration: underline;
-}
+  :hover ul,
+  ul:hover {
+    display: block;
+  }
 
-.navegacion-perfil p {
-  display: flex;
-  color: $blanco;
+  li a:hover {
+    text-decoration: underline;
+  }
 }
 
 .main {
   height: 300px;
 }
 
-.barra-busqueda{
+.barra-busqueda {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,17 +110,17 @@ ul:hover {
   color: $blanco;
 }
 
-.categories-title{
+.categories-title {
   color: $blanco;
   font-size: 16px;
   position: absolute;
-  padding-left:30px;
+  padding-left: 30px;
   width: 100%;
 }
 
 .carousel {
   width: 100%;
-  overflow: hidden ;
+  overflow: hidden;
   padding: 30px;
   position: relative;
 }
@@ -185,14 +184,14 @@ ul:hover {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-}
 
-.carousel-container-item-detalles img {
-  height: 15px;
-}
+  img {
+    height: 15px;
+  }
 
-.carousel-container-item-detalles p {
-  margin: 0px;
+  p {
+    margin: 0px;
+  }
 }
 
 .carousel-container-item-detalles:hover {
@@ -206,14 +205,11 @@ ul:hover {
   display: flex;
 }
 
-.header-register{
+.header-register {
   display: flex;
 }
 
-
-
-.login{
-
+.login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +218,7 @@ ul:hover {
   min-height: calc(100vh - 200px);
 }
 
-.register{
+.register {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,21 +227,19 @@ ul:hover {
   min-height: calc(100vh - 200px);
 }
 
-
-
-.login-container{
-background-color: rgba(255, 255, 255, 0.1);
-border: 2px solid $blanco;
-border-radius: 40px;
-color: $blanco;
-padding: 60px 68px 40px;
-min-height: 700px;
-display: flex;
-justify-content: space-around;
-flex-direction: column;
+.login-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid $blanco;
+  border-radius: 40px;
+  color: $blanco;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.register-container{
+.register-container {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid $blanco;
   border-radius: 40px;
@@ -258,81 +252,75 @@ flex-direction: column;
   flex-direction: column;
 }
 
-.login-container-form{
-
+.login-container-form {
   display: flex;
   flex-direction: column; /*Direccion de los elementos en columna*/
-
 }
 
-.register-container-form{ /*a partir de aqui ya toma la forma de columna , no antes*/
+.register-container-form {
+  /*a partir de aqui ya toma la forma de columna , no antes*/
   display: flex;
   flex-direction: column;
 }
 
-
-.login-container-remember-me a{
+.login-container-remember-me a {
   color: $blanco;
   font-size: 14px;
   text-decoration: none;
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
-.login-container-remember-me a:hover{
-  text-decoration: underline;
-}
-
-.login-container-social-media > div{
+.login-container-social-media > div {
   display: flex;
   align-items: center;
   font-size: 14px;
-  margin-bottom: 8px ;
+  margin-bottom: 8px;
   margin-top: 5px;
+
+  p {
+    margin-left: 10px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }
-
-.login-container-social-media p {
-  margin-left: 10px;
-}
-
-.login-container-social-media img {
-  width: 30px;
-  height: 30px;
-}
-
-
 
 .login-container-register {
   font-size: 14px;
+
+  a {
+    font-size: 16px;
+    font-weight: bold;
+    color: $blanco;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
-.register-container-inicio-sesion{
+.register-container-inicio-sesion {
   font-size: 14px;
+
+  a {
+    font-size: 16px;
+    font-weight: bold;
+    color: $blanco;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
-
-.login-container-register a {
-  font-size: 16px;
-  font-weight: bold;
-  color: $blanco;
-  text-decoration: none;
-}
-
-.register-container-inicio-sesion a{
-  font-size: 16px;
-  font-weight: bold;
-  color: $blanco;
-  text-decoration: none;
-}
-
-.login-container-register a:hover {
-  text-decoration: underline;
-  
-}
-
-.register-container-inicio-sesion a:hover{
-  text-decoration: underline;
-}
-
-.input{
+.input {
   background-color: transparent;
   border-left: 0px;
   border-top: 0px;
@@ -345,15 +333,13 @@ flex-direction: column;
   padding: 0px 20px;
   outline: none;
   height: 50px;
-
-
 }
 
-::placeholder{
+::placeholder {
   color: $blanco;
 }
 
-.button{
+.button {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 25px;
@@ -367,42 +353,41 @@ flex-direction: column;
   margin: 10px 0px;
 }
 
-
 footer {
   display: flex;
   align-items: center;
   height: 100px;
   width: 100%;
+
+  a {
+    color: $blanco;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
-footer a{
-  color: $blanco;
-  cursor: pointer;
-  font-size: 14px;
-  padding-left: 30px;
-  text-decoration: none;
-}
-
-footer a:hover{
-  text-decoration: underline;
-}
-@media only screen and (max-width: 600px){
-  .login-container{
+@media only screen and (max-width: 600px) {
+  .login-container {
     background-color: transparent;
     border: none;
     padding: 0;
     width: 100%;
   }
 
-  footer{
+  footer {
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
   }
-
 }
 
-.notfound-text{
+.notfound-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -414,7 +399,7 @@ footer a:hover{
   text-align: center;
   margin-top: 56px;
   color: #fff;
-  font-size: 1.0em;
+  font-size: 1em;
   font-family: sans-serif;
   text-transform: uppercase;
 }
@@ -425,24 +410,29 @@ footer a:hover{
   animation-iteration-count: infinite;
 }
 
-
-
 @keyframes wobble {
-  0% {transform: translateX(0%);}
-  15% {transform: translateX(-25%) rotate(-5deg);}
-  30% {transform: translateX(20%) rotate(3deg);}
-  45% {transform: translateX(-15%) rotate(-3deg);}
-  60% {transform: translateX(10%) rotate(2deg);}
-  75% {transform: translateX(-5%) rotate(-1deg);}
-  100% {transform: translateX(0%);}
+  0% {
+    transform: translateX(0%);
+  }
+  15% {
+    transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 .wobble {
   animation-name: wobble;
 }
-
-
-
-
-
-
-
